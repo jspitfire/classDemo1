@@ -1,0 +1,148 @@
+gitjames@LAPTOP-209JQS27 MINGW64 ~/bootcamp
+$ git clone git@github.com:jspitfire/classDemo1.git
+Cloning into 'classDemo1'...
+Enter passphrase for key '/c/Users/james/.SSH/id_ed25519':
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (4/4), done.
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp
+$ ls
+classDemo1/  first_day_stuff/  first-day.html  first-day.txt  one_folder/  prework-study-guide/  prework-study-guide-1/  second_folder/
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp
+$ cd classDemo1/
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ touch index.html style.css
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ ls
+index.html  LICENSE  README.md  style.css
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git addg
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git add .
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ touch setupnotes.txt
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ ls
+index.html  LICENSE  README.md  setupnotes.txt  style.css
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git commit -m "adds landing page, style sheet, and readme"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'james@LAPTOP-209JQS27.(none)')
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git statys
+git: 'statys' is not a git command. See 'git --help'.
+
+The most similar command is
+        status
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   index.html
+        new file:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        setupnotes.txt
+
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ code .
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git push origin main
+Enter passphrase for key '/c/Users/james/.SSH/id_ed25519':
+Everything up-to-date
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git add .
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git commit -m "add the beginning html to index file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'james@LAPTOP-209JQS27.(none)')
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git remote
+origin
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git remote -v
+origin  git@github.com:jspitfire/classDemo1.git (fetch)
+origin  git@github.com:jspitfire/classDemo1.git (push)
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$ git push
+Enter passphrase for key '/c/Users/james/.SSH/id_ed25519':
+Everything up-to-date
+
+james@LAPTOP-209JQS27 MINGW64 ~/bootcamp/classDemo1 (main)
+$
+
+#Key prompts
+git clone "(ssh code copied i.e. from github)"
+
+git add .
+git commit -m "(commit notes)" - is the -m a markdown comment?
+git push / git push origin main
+git remote (shows origin i.e. repo location?)
+git status
+
+ls - list files
+touch setup.txt (creates txt file)
+
+code . - opens visual code
